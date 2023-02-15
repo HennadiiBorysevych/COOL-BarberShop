@@ -1,0 +1,25 @@
+@import 'utils/variables';
+@import 'utils/visually-hidden';
+@import 'utils/placeholders';
+@import 'utils/mixin';
+@import 'utils/mixin';
+
+
+@import 'base/base';
+@import 'base/container';
+@import 'base/section';
+@import 'base/fonts';
+
+@import 'components/sectionTitle';
+@import 'components/modalWindow';
+@import 'components/mobileMenu';
+
+@import 'layout/header';
+@import 'mainSection';
+@import 'layout/portfolioFilters';
+@import 'layout/portfolioProjects';
+@import 'layout/advantages';
+@import 'layout/examples';
+@import 'layout/team';
+@import 'layout/clients';
+@import 'layout/footer';
