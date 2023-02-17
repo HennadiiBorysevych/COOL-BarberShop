@@ -5,8 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div class="body-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-wrapper">
+            <a class="logo" href="./index.html">
+              <img src="./images/46. Лого.svg" alt="logo" />
+              <span>Cool Barber</span>
+            </a>
+            <nav class="header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">About Us</li>
+                <li class="nav__item">Our masters</li>
+                <li class="nav__item">Portfolio</li>
+                <li class="nav__item">Testimonials</li>
+                <li class="nav__item">Contacts</li>
+              </ul>
+            </nav>
+            <ul class="adress__list">
+              <li class="adress__item">
+                <p>
+                  302 W 50th St, <br />
+                  NY, NY 10019
+                </p>
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="36" height="36" rx="18" fill="#FF6E40" />
+                  <path
+                    d="M23.907 13.48C23.8429 13.2399 23.7128 12.984 23.6165 12.76C22.4647 9.99202 19.9481 9.00002 17.9161 9.00002C15.1958 9.00002 12.1998 10.8241 11.7998 14.5839V15.352C11.7998 15.3841 11.8109 15.672 11.8265 15.8161C12.0508 17.6079 13.4647 19.5122 14.5206 21.304C15.6566 23.2238 16.8355 25.1123 18.0033 27C18.7235 25.7681 19.441 24.52 20.1448 23.32C20.3366 22.9679 20.5592 22.6159 20.7512 22.2798C20.8792 22.056 21.1237 21.8322 21.2354 21.6239C22.3714 19.5441 24.1999 17.4481 24.1999 15.384V14.5361C24.1999 14.3123 23.9226 13.5283 23.907 13.48ZM17.9659 17.3361C17.1663 17.3361 16.291 16.9363 15.859 15.8321C15.7947 15.6563 15.7999 15.3041 15.7999 15.2718V14.7758C15.7999 13.3682 16.9951 12.728 18.0349 12.728C19.3149 12.728 20.305 13.7522 20.305 15.0323C20.305 16.3123 19.246 17.3361 17.9659 17.3361Z"
+                    fill="#3B322D"
+                  />
+                </svg>
+              </li>
+              <li class="adress__item">
+                <div class="adress__item-wrapper">
+                  <p>8 (800) 000-00-00</p>
+                  <p>Daily from 9 to 20</p>
+                </div>
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="36" height="36" rx="18" fill="#FF6E40" />
+                  <path
+                    d="M24.1384 20.2606C23.4878 19.6183 22.6757 19.6183 22.0293 20.2606C21.5362 20.7495 21.0431 21.2385 20.5583 21.7357C20.4257 21.8724 20.3139 21.9014 20.1523 21.8103C19.8332 21.6363 19.4934 21.4954 19.1868 21.3048C17.7573 20.4056 16.5598 19.2496 15.4991 17.9485C14.9728 17.3021 14.5046 16.6101 14.1773 15.8312C14.111 15.6737 14.1234 15.5701 14.2519 15.4417C14.7449 14.9651 15.2256 14.4762 15.7104 13.9873C16.3858 13.3077 16.3858 12.5122 15.7062 11.8285C15.3209 11.439 14.9356 11.0578 14.5502 10.6683C14.1524 10.2705 13.7588 9.86859 13.3569 9.47495C12.7063 8.84099 11.8942 8.84099 11.2478 9.4791C10.7506 9.96804 10.2741 10.4694 9.76855 10.9501C9.30033 11.3934 9.06415 11.9362 9.01443 12.5702C8.9357 13.6019 9.18846 14.5757 9.5448 15.5245C10.2741 17.4886 11.3845 19.233 12.7312 20.8324C14.5502 22.9953 16.7214 24.7066 19.2614 25.9414C20.405 26.4966 21.5901 26.9234 22.8787 26.9939C23.7654 27.0436 24.5361 26.8198 25.1535 26.1279C25.5762 25.6555 26.0527 25.2246 26.5002 24.7729C27.1631 24.1017 27.1673 23.2895 26.5085 22.6266C25.7212 21.8351 24.9298 21.0479 24.1384 20.2606Z"
+                    fill="#3B322D"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section bg-img">
+          <div class="container">
+            <div class="main-section">
+              <div class="main-wrapper">
+                <h1 class="main__title">Men’s Barbershop in The Middle East</h1>
+                <div>
+                  <p class="main__text">THE HIGHEST RATED</p>
+                  <p class="main__content">
+                    Text that is placed at the bottom of the heading to reveal
+                    details
+                  </p>
+                </div>
+              </div>
+              <button class="btn" type="button">Book now</button>
+            </div>
+          </div>
+        </section>
+        <section class="section bg-color">
+          <div class="container">
+            <div class="description-wrapper">
+              <ul class="description__list">
+                <li class="descripton__item">
+                  <img
+                    src="./images/004-barber shop.svg"
+                    alt="barber shop"
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="desctiptoin__title">
+                    Briefly describe the benefit
+                  </h2>
+                  <p class="description__text">
+                    Long text, in two lines, for clarity and detail
+                  </p>
+                </li>
+                <li class="descripton__item">
+                  <img
+                    src="./images/012-hair gel.svg"
+                    alt="barber shop"
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="desctiptoin__title">
+                    Briefly describe the benefit
+                  </h2>
+                  <p class="description__text">
+                    Long text, in two lines, for clarity and detail
+                  </p>
+                </li>
+                <li class="descripton__item">
+                  <img
+                    src="./images/020-beard.svg"
+                    alt="barber shop"
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="desctiptoin__title">
+                    Briefly describe the benefit
+                  </h2>
+                  <p class="description__text">
+                    Long text, in two lines, for clarity and detail
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="about-us-wrapper">
+              <h2 class="title">About Us</h2>
+              <p class="text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt
+              </p>
+            </div>
+            <ul class="about-us__list">
+              <li class="about-us__item-1">
+                <img src="./images/photo (1).webp" alt="pic" />
+              </li>
+              <li class="about-us__item-2">
+                <img src="./images/photo.webp" alt="pic" />
+              </li>
+              <li class="about-us__item-3">
+                <img src="./images/photo (5) (1).webp" alt="pic" />
+              </li>
+              <li class="about-us__item-4">
+                <img src="./images/photo (4).webp" alt="pic" />
+              </li>
+              <li class="about-us__item-5">
+                <img src="./images/photo (3).webp" alt="pic" />
+              </li>
+              <li class="about-us__item-6">
+                <img src="./images/photo (2).webp" alt="pic" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
     <script src="./script.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+.bg-color {
+  background-color: #251d1a;
+}
+.description__list {
+  display: flex;
+  justify-content: space-between;
+}
+.descripton__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.desctiptoin__title {
+  font-family: 'Fira Sans';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.35;
+  text-align: center;
+
+  color: var(--primary-text-color);
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.description__text {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: #b7aaa2;
+}
