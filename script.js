@@ -10,18 +10,18 @@
 //   params = null;
 // }
 // me(a);
-// console.log('🚀 ~ file: script.js:8 ~ a', a);
+// console.log(a);
 
 // setTimeout(() => {
-//   console.log("1");
+//   console.log('1');
 // }, 0);
-// Promise.resolve("2").then(console.log);
+// Promise.resolve('2').then(console.log);
 
-// console.log("3");
+// console.log('3');
 
 // var a = 'hello';
 
-// function b() {
+// (function b() {
 //   if (false) {
 //     var a = 'world';
 //   } else {
@@ -29,18 +29,19 @@
 //   }
 //   console.log(b);
 //   console.log(a);
-// }
+// })();
 // b();
 
 // var x = 10;
+// var x = 20;
 // function bar(par) {
 //   var x = 30;
 //   par();
 // }
+
 // function foo() {
 //   console.log(x);
 // }
-
 // bar(foo);
 
 // let v = new Array('a', 'b');
@@ -57,14 +58,15 @@
 //   }
 // }
 
-// const element = document.getElementById("test");
+// const element = document.getElementById('test');
 // const listener = new GodLisner();
-// element.addEventListener("click", listener.handleClick);
+// console.log(listener);
+// element.addEventListener('click', listener.handleClick);
 
 // const map = new Map();
 
 // map.set('0', '1');
-// map.set('s2', '2s');
+// map.set('s2', '2.7s');
 // map.set('3s', 's3');
 
 // const arr = [...map.values()];

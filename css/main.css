@@ -267,4 +267,91 @@ ul {
   gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+
+.about-us__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about-us__buttons a {
+  text-decoration: none;
+}
+
+.testimonials__list {
+  display: flex;
+  gap: 20px;
+}
+
+.testimonials__item a {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #ff6e40;
+  text-decoration: none;
+}
+
+.testimonials__title {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.testimonials__text {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  margin-bottom: 24px;
+}
+
+.price__list {
+  display: flex;
+  gap: 20px;
+}
+
+.price__title {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.33;
+  color: #efe7e2;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.offers li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.offers__title {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.73;
+  color: var(--primary-text-color);
+}
+
+.offers-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.offers__time {
+  color: #b7aaa2;
+}
+
+.offers {
+  border-right: 2px solid #b7aaa2;
+  padding-right: 10px;
 }/*# sourceMappingURL=main.css.map */
