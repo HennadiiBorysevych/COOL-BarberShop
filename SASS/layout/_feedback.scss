@@ -1,14 +1,14 @@
 .footer-wrapper {
   position: relative;
 }
-.feedback {
+.consultation {
   position: absolute;
   padding: 70px 150px 70px 150px;
   max-width: 1200px;
   background-color: #ff6e40;
   bottom: -109px;
 }
-.feddback__title {
+.consultation__title {
   font-weight: 900;
   font-size: 36px;
   line-height: 1.33;
@@ -18,7 +18,7 @@
   color: #000000;
   margin-bottom: 12px;
 }
-.feedback__text {
+.consultation__text {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
@@ -31,18 +31,18 @@
   margin-bottom: 35px;
 }
 
-.feedback__form div {
+.consultation__form div {
   display: flex;
   gap: 20px;
   margin-bottom: 25px;
 }
-.feedback input {
+.consultation input {
   width: 323px;
   background-color: transparent;
   padding: 22px 20px 22px 20px;
   border: 1px solid #000;
 }
-.feedback input::placeholder {
+.consultation input::placeholder {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
